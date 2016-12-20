@@ -1,0 +1,14 @@
+The mean value of stock prices in N days:
+Mean[N] = [DAY[T].stock_price + DAY[T-1].stock_price +...+ DAY[T-(N-1)].stock_price]/N
+
+The deviation value:
+Devi[T] = Mean[N] - DAY[T].stock_price
+
+The mean value of the deviation values in N days:
+MeanDevi[N] = [Devi[T] + Devi[T-1] +...+ Devi[T-(N-1)]]/N
+
+The standard deviation in N days:
+SDevi[N] = sqrt([(Devi[T]-MeanDevi[N])^2 +...+ [(Devi[T]-MeanFevi[N])^2]/N)
+
+The deviation point:
+Devi[T] > 2 * SDevi[N]
